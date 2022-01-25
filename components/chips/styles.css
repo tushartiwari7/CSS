@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* theme based variables */
+  --base-primary-color: #000e14;
+  --base-secondary-color: #00141f;
+  --primary-color: #003d5c;
+  --secondary-color: #00293d;
+  --font-color: white;
+  --font-family-primary: Roboto,sans-serif;
+  --font-family-secondary: 'Patrick Hand',cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--base-primary-color);
+
+}
+
+main {
+  margin: 1rem;
+  width: 600px;
+  padding: 4rem 0;
+}
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+.col {
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.row {
+  flex-direction: row;
+}
+.input {
+  width: 100%;
+  padding: 8px 32px;
+  font-size: 1.2rem;
+  font-family: var(--font-family-secondary);
+  color: var(--font-color);
+}
+
+.bg-blue {
+  border: 1px solid var(--primary-color);
+  background: var(--base-secondary-color);
+}
+form > button {
+  display: none;
+}
+.wrapper {
+  display: none;
+}
+.visible {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+.chip {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 50px;
+  border: 2px solid var(--primary-color);
+  background: var(--secondary-color);
+  gap: 10px;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  align-items: center;
+  height: fit-content;
+}
+.chip-text {
+  margin-left: 10px;
+  color: var(--font-color);
+}
+.remove {
+  position: relative;
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+}
+.remove:hover {
+  background: var(--primary-color);
+}
