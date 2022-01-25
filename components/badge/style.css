@@ -1,0 +1,109 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-primary: #000e14; 
+  --bg-secondary: #14213D;
+  --primary: #0096E0;
+  --on-hover: #0096E0;
+  --on-active: #007AB8;
+  --red: #D20F1F;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  color: white;
+}
+
+main {
+  min-width: 20rem;
+  width: max(500px,50vw);
+  background: var(--bg-secondary);  
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  position: relative;
+  margin: 2rem 1rem;
+  height: 50px;
+  line-height: 50px;
+}
+
+button {
+  position: absolute;
+  border-radius: 5px;
+  border: 0px;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  min-width: fit-content;
+
+}
+
+button:hover {
+  background: var(--on-hover);
+}
+
+button:active, button:focus {
+  background: var(--on-active);
+}
+
+
+.badge {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -0.5rem;
+  left: -0.5rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  background: var(--red);
+  color: white;
+
+}
+
+.badge-larger {
+
+  width: 2rem;
+  height: 2rem;
+  top: -1rem;
+  left: -1rem;
+  font-size: 1.2rem;
+}
+button > .badge {
+  position: absolute;
+  top: -0.8rem;
+  left: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.badge.position-top-left {
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+}
+
+svg {
+
+}
+.icon-badge {
+  top: -1rem;
+}
