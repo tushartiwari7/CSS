@@ -1,0 +1,78 @@
+@import url('https://css.gg/css?=|bookmark|gym|comment|boy|git-branch|abstract|data');
+
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-primary: #000e14; 
+  --bg-secondary: #14213D;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  color: white;
+}
+
+main {
+  width: 20rem;
+  background: var(--bg-secondary);  
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.heading {
+  font-family: Roboto,sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+.subtitle {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+nav {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  overflow-y: scroll;
+  height: 12rem;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+
+}
+
+li:hover {
+  background: var(--bg-primary);
+}
+
+li span {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.icon {
+  padding: 5px;
+} 
