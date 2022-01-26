@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snackbar | CSS Component</title>                   
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body >
+  <main class="flex">
+      <button  onclick="showDialog()" class="btn curved-edge btn-open-dialog"> Open Dialog </button>
+  </main>
+  <div class="dialog-wrapper x-y-center curved-edge flex" id="dialog">
+    <div class="question flex">
+      <h3 class="title" id="title"> Use Location Service? </h3>
+      <label for="title" class="subtitle">
+        Let us help apps determine your location.
+      </label>
+    </div>
+    <hr>
+    <div class="answer flex">
+      <button onclick="hideDialog()" >Confirm</button>
+      <button  onclick="hideDialog()" >Cancel</button>
+    </div>
+  </div>
+</body>
+</html>
