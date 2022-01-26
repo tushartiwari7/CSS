@@ -10,9 +10,11 @@
 </head>
 <body >
   <main class="flex">
-      <button  onclick="showDialog()" class="btn curved-edge btn-open-dialog"> Open Dialog </button>
+      <button  onclick="showDialog1()" class="btn curved-edge btn-open-dialog"> Open Dialog 1 </button>
+      <button  onclick="showDialog2()" class="btn curved-edge btn-open-dialog"> Open Dialog 2</button>
+      <button  onclick="showDialog3()" class="btn curved-edge btn-open-dialog"> Open Dialog 3</button>
   </main>
-  <div class="dialog-wrapper x-y-center curved-edge flex" id="dialog">
+  <div class="dialog-wrapper x-y-center layout-ios curved-edge flex" id="dialog1">
     <div class="question flex">
       <h3 class="title" id="title"> Use Location Service? </h3>
       <label for="title" class="subtitle">
@@ -21,9 +23,84 @@
     </div>
     <hr>
     <div class="answer flex">
-      <button onclick="hideDialog()" >Confirm</button>
-      <button  onclick="hideDialog()" >Cancel</button>
+      <button onclick="hideDialog1()" >Confirm</button>
+      <button  onclick="hideDialog1()" >Cancel</button>
     </div>
   </div>
+  <div class="dialog-wrapper x-y-center layout-android" id="dialog2">
+    <div class="question flex">
+      <h3 class="title" id="title"> Use Location Service? </h3>
+      <label for="title" class="subtitle">
+        Let us help apps determine your location. This means sending anonymous data to us, even when no apps are running
+      </label>
+    </div>
+    <div class="answer flex flex-end">
+      <button 
+        class="btn curved-edge btn-open-dialog"
+        onclick="hideDialog2()"
+      >Turn On Speed Boost</button>
+      <button class="btn curved-edge btn-open-dialog" 
+        onclick="hideDialog2()"
+      >Remind me Later</button>
+      <button class="btn curved-edge btn-open-dialog" 
+        onclick="hideDialog2()"
+      >No Thanks</button>
+    </div>
+  </div>
+  <div class="dialog-wrapper x-y-center layout-radios" id="dialog3">
+    <div class="question flex">
+      <h3 class="title" id="title"> Dialog Header </h3>
+    </div>
+    <div class="radio-wrapper">
+      <ul class="list">
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-1" value="radio-1" checked class="radio-input">
+          <label for="radio-1" class="radio-name">radio-1</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-2" value="radio-2" class="radio-input">
+          <label for="radio-2" class="radio-name">radio-2</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-3" value="radio-3" class="radio-input">
+          <label for="radio-3" class="radio-name">radio-3</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-4" value="radio-4" class="radio-input">
+          <label for="radio-4" class="radio-name">radio-4</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-5" value="radio-5" class="radio-input">
+          <label for="radio-5" class="radio-name">radio-5</label>
+        </li>
+        
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-6" value="radio-6" class="radio-input">
+          <label for="radio-6" class="radio-name">radio-6</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-6" value="radio-6" class="radio-input">
+          <label for="radio-6" class="radio-name">radio-6</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-7" value="radio-7" class="radio-input">
+          <label for="radio-7" class="radio-name">radio-7</label>
+        </li>
+        <li class="list-item">
+          <input type="radio" name="radio" id="radio-8" value="radio-8" class="radio-input">
+          <label for="radio-8" class="radio-name">radio-8</label>
+        </li>
+      </ul>
+    </div>
+    <div class="answer flex">
+      <button class="btn curved-edge btn-open-dialog" 
+        onclick="hideDialog3()"
+      >Action 1</button>
+      <button class="btn curved-edge btn-open-dialog" 
+        onclick="hideDialog3()"
+      >Action 2</button>
+    </div>
+  </div>
+  
 </body>
 </html>
