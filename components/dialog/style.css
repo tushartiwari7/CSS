@@ -27,6 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--bg-primary);
+  color: var(--font-color);
 }
 
 main {
