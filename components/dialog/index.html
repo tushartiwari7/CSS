@@ -10,9 +10,11 @@
 </head>
 <body >
   <main class="flex">
-      <button  onclick="showDialog()" class="btn curved-edge btn-open-dialog"> Open Dialog </button>
+      <button  onclick="showDialog1()" class="btn curved-edge btn-open-dialog"> Open Dialog 1 </button>
+      <button  onclick="showDialog2()" class="btn curved-edge btn-open-dialog"> Open Dialog 2</button>
+      <button  onclick="showDialog3()" class="btn curved-edge btn-open-dialog"> Open Dialog 3</button>
   </main>
-  <div class="dialog-wrapper x-y-center curved-edge flex" id="dialog">
+  <div class="dialog-wrapper x-y-center layout-ios curved-edge flex" id="dialog1">
     <div class="question flex">
       <h3 class="title" id="title"> Use Location Service? </h3>
       <label for="title" class="subtitle">
@@ -21,8 +23,28 @@
     </div>
     <hr>
     <div class="answer flex">
-      <button onclick="hideDialog()" >Confirm</button>
-      <button  onclick="hideDialog()" >Cancel</button>
+      <button onclick="hideDialog1()" >Confirm</button>
+      <button  onclick="hideDialog1()" >Cancel</button>
+    </div>
+  </div>
+  <div class="dialog-wrapper x-y-center layout-android" id="dialog2">
+    <div class="question flex">
+      <h3 class="title" id="title"> Use Location Service? </h3>
+      <label for="title" class="subtitle">
+        Let us help apps determine your location. This means sending anonymous data to us, even when no apps are running
+      </label>
+    </div>
+    <div class="answer flex flex-end">
+      <button 
+        class="btn curved-edge btn-open-dialog"
+        onclick="hideDialog2()"
+      >Turn On Speed Boost</button>
+      <button class="btn curved-edge btn-open-dialog" 
+        onclick="hideDialog2()"
+      >Remind me Later</button>
+      <button class="btn curved-edge btn-open-dialog" 
+        onclick="hideDialog2()"
+      >No Thanks</button>
     </div>
   </div>
 </body>
