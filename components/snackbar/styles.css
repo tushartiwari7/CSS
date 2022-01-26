@@ -1,0 +1,134 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-primary: #000e14; 
+  --bg-secondary: #14213D;
+  --primary: #005580;
+  --light-blue: #007AB8;
+  --on-active: #0096E0;
+  --red: #D20F1F;
+  --dark-red: #8F1300;
+  --font-color: white;
+  --green: #00470A;
+  --blue: #00788F;
+  --light-green: #009013;
+  --grey: #28313E;
+  --light-grey: #333F50;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+}
+
+main {
+  margin: 1rem;
+  width: 600px;
+  padding: 4rem 0;
+  color: var(--font-color);
+}
+main > button {
+  margin: 1rem;
+}
+button.toggle {  
+  border: 0px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  min-width: fit-content;
+  color: inherit;
+}
+
+.snackbar-wrapper {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 5rem;
+  min-height: 2rem;
+  min-width: fit-content;
+  padding: 10px 1rem;
+  visibility: hidden;
+  transition: 0.5s visibility ease-in-out;
+  z-index: 100;
+}
+
+/* btn.green */
+.bg-green {
+  background: var(--green);
+}
+
+button.bg-green:hover {
+  background: var(--light-green);
+}
+
+.bg-green .icon-wrapper:hover {
+  background: var(--light-green);
+}
+
+/* btn.blue */
+.bg-blue {
+  background: var(--primary);
+}
+
+button.bg-blue:hover {
+  background: var(--light-blue);
+}
+
+.bg-blue .icon-wrapper:hover {
+  background: var(--blue);
+}
+
+/* btn.red */
+.bg-red {
+  background: var(--red);
+}
+.bg-red:hover {
+  background: var(--dark-red);
+}
+.bg-red .icon-wrapper:hover {
+  background: var(--red);
+}
+
+/* btn.grey */
+.bg-grey {
+  background: var(--grey);
+}
+.bg-grey:hover {
+  background: var(--light-grey);
+}
+.bg-grey .icon-wrapper:hover {
+  background: var(--grey);
+}
+
+.curved-edge {
+  border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-wrapper {
+  padding: 5px;
+  border-radius: 50%;
+  transition: .2s background;
+}
+
+.exit-icon {
+  font-size: 1.2rem;
+  position: relative;
+  top: 2px;
+}
