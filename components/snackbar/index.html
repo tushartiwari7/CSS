@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snackbar | CSS Component</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+</head>
+<body >
+  <main>
+      <button onclick="toggleSnackbar('snackbar-blue')" class="toggle curved-edge bg-blue"> Blue Snackbar </button>
+      <button onclick="toggleSnackbar('snackbar-green')" class="toggle curved-edge bg-green"> Green Snackbar </button>
+      <button onclick="toggleSnackbar('snackbar-red')" class="toggle curved-edge bg-red"> Red Snackbar </button>
+      <button onclick="toggleSnackbar('snackbar-grey')" class="toggle curved-edge bg-grey"> Grey Snackbar </button>
+
+      <div class="snackbar-wrapper bg-blue flex curved-edge" id="snackbar-blue">
+        <p>Try again! Server is busy.</p>
+        <div class="icon-wrapper flex" onclick="closeSnackbar('snackbar-blue')">
+          <i class="bi bi-x-circle exit-icon"></i>
+        </div>
+      </div>
+      <div class="snackbar-wrapper bg-green flex curved-edge" id="snackbar-green">
+        <p>Try again! Server is busy.</p>
+        <div class="icon-wrapper flex" onclick="closeSnackbar('snackbar-green')">
+          <i class="bi bi-x-circle exit-icon"></i>
+        </div>
+      </div>
+      
+      <div class="snackbar-wrapper bg-red flex curved-edge" id="snackbar-red">
+        <p>Try again! Server is busy.</p>
+        <div class="icon-wrapper flex" onclick="closeSnackbar('snackbar-red')">
+          <i class="bi bi-x-circle exit-icon"></i>
+        </div>
+      </div>
+      
+      <div class="snackbar-wrapper bg-grey flex curved-edge" id="snackbar-grey">
+        <p>Try again! Server is busy.</p>
+        <div class="icon-wrapper flex" onclick="closeSnackbar('snackbar-grey')">
+          <i class="bi bi-x-circle exit-icon"></i>
+        </div>
+      </div>
+  </main>
+</body>
+</html>
